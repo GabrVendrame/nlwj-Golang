@@ -10,5 +10,6 @@ sql:
         sql_package: "pgx/v5"
         overrides:
           - db_type: "uuid"
-            go_type: "github.com/google/uuid"
-            type: "UUID"
+            go_type: 
+              import: "github.com/google/uuid"
+              type: "UUID"
